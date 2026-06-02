@@ -19,7 +19,7 @@
 
   <nav class="navbar">
     <div class="logo">Mitha BM</div>
-
+<button id="darkModeBtn">🌙</button>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -35,15 +35,20 @@
   <section class="hero">
 
     <div class="hero-text">
-<img src="mitha_pic2.PNG" class="profile-pic">
+<img src="mitha_pic2.png" class="profile-pic">
 
 
       <h1>Hello, I'm <span>Mitha BM</span></h1>
 
       <p>
         B.Tech IST Student | AI & Data Science Explorer | Learning and Innovating      </p>
-        <a href="#projects" class="btn">View Projects</a>
-    </div>
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+</div>    </div>
 
   </section>
 
@@ -98,7 +103,7 @@ I also aspire to contribute advancements to Tech industry.
           <li>Web Development</li>
           <li>Creative Designing</li>
           <li>Tech Innovation</li>
-          <li></li>
+          <li>Graphic Designing</li>
         </ul>
       </div>
 
@@ -154,6 +159,16 @@ I also aspire to contribute advancements to Tech industry.
 Developed an advanced Java-based Ludo Simulation Engine with GUI, tournament mode, JDBC database integration, and real-time player statistics tracking.        </p>
 
       </div>
+<div class="project-card">
+
+<h3>Personal Portfolio Website</h3>
+
+<p>
+Designed and developed a fully responsive portfolio website using HTML and CSS with glassmorphism effects and responsive layouts.
+</p>
+
+</div>
+
 
 
 
@@ -185,35 +200,78 @@ Developed an advanced Java-based Ludo Simulation Engine with GUI, tournament mod
             <p>Certificate of Particiapation in the category of Transportation and Logistics.</p>
         </div>
 
-
     </div>
+
+<section id="contact" class="section">
+
+<h2>Contact Me</h2>
+
+<div class="card">
+
+<form>
+
+<input
+type="text"
+placeholder="Enter Your Name"
+required>
+
+<input
+type="email"
+placeholder="Enter Your Email"
+required>
+
+<textarea
+rows="5"
+placeholder="Enter Your Message"
+required></textarea>
+
+<button
+type="submit"
+class="btn">
+Send Message
+</button>
+
+</form>
+
+</div>
 
 </section>
-
-  <!-- Contact Section -->
-
-  <section id="contact" class="section">
-
-    <h2>Contact Me</h2>
-
-    <div class="card">
-
-      <p><strong>Email:</strong> <b>mithabm17@gmail.com</b></p>
-
-      <p><strong>LinkedIn:</strong><b> linkedin.com/in/mithabm</b></p>
-
-      <p><strong>GitHub:<b></strong> github.com/mithabm</b></p>
-
-    </div>
-
-  </section>
-
 
   <!-- Footer -->
 
   <footer>
     <p>© 2026 Mitha BM | All Rights Reserved</p>
   </footer>
+<script>
 
+const darkBtn =
+document.getElementById(
+"darkModeBtn"
+);
+
+darkBtn.onclick = function(){
+
+document.body
+.classList.toggle(
+"dark-mode"
+);
+
+if(
+document.body.classList.contains(
+"dark-mode"
+)
+){
+
+darkBtn.innerHTML="☀️";
+
+}else{
+
+darkBtn.innerHTML="🌙";
+
+}
+
+};
+
+</script>
 </body>
 </html>
